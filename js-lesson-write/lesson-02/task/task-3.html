@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let randomNumber = Math.random()
+    const minNum = 1,
+      maxNum = 5
+    const randNumber = minNum + Math.floor(Math.random() * (maxNum - minNum + 1))
+    let userNumber = parseInt(prompt('Введіть  число від 1 до 5'))
+
+
+    if (userNumber === randNumber)
+      alert('Ви вгадали!')
+    else {
+      userNumber = (prompt('Ви не вгадали. Введіть  число'))
+      if (userNumber === randNumber) alert('Ви вгадали')
+      else alert('Ви не вгадали')
+    }
+  </script>
+</body>
+
+</html>

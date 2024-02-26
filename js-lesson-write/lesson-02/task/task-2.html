@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson 02</title>
+</head>
+
+<body>
+  <script>
+    let priceProduct = parseFloat(prompt(`ціна товару:`))
+    let money = parseFloat(prompt(`скільки грошей ви маєте?`))
+    let remainder = money - priceProduct
+
+    if (priceProduct > money)
+      document.write("Вибачте, невистачає грошей!")
+    else if (priceProduct == money)
+      document.write("Дякую за замовлення!")
+    else
+      document.write(`Бажаєте придбати лотерею за 4 грн? у вас лишилось ${remainder} грн.`)
+
+  </script>
+</body>
+
+</html>
