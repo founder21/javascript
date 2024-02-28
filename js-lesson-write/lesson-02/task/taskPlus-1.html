@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const choiceUser = parseInt(prompt('Введіть свій номер настрою від 1 до 3. де 1- веселий, 2- сумний, 3-обурений:'))
+    const cheerful = 1
+    const sad = 2
+    const indignant = 3
+
+    const imageСheerful = '<img src="/img/01.png" alt="Веселий">';
+    const imageSad = '<img src="/img/02.png" alt="Сумний">';
+    const imageIndignant = '<img src="/img/03.png" alt="Обурений">';
+
+    if (choiceUser === cheerful)
+      document.write(imageСheerful)
+    else if (choiceUser === sad)
+      document.write(imageSad)
+    else if (choiceUser === indignant)
+      document.write(imageIndignant)
+    else
+      document.write('Невірно вибраний номер')
+  </script>
+</body>
+
+</html>

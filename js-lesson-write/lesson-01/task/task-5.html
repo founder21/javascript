@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>lesson 01</title>
+</head>
+
+<body>
+  <script>
+    const secondsWrite = parseInt(prompt('Введіть кількімть секунд'))
+    const minutes = secondsWrite / 60
+    const hours = secondsWrite / 3600
+    document.write(
+      `
+      <table border="1">
+    <tr>
+        <th>Секунди</th>
+        <th>Хвилини</th>
+        <th>Години</th>
+    </tr>
+    <tr>
+        <td>${secondsWrite}</td>
+        <td>${minutes}</td>
+        <td>${hours} </td>
+    </tr>
+</table>
+
+  `)
+
+  </script>
+
+</body>
+
+</html>

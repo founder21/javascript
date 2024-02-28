@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>lesson 01</title>
+</head>
+
+<body>
+  <script>
+    const firstNum = parseFloat(prompt("введіть перше число:"))
+    const secondNum = parseFloat(prompt("введіть друге число:"))
+    const sum = firstNum + secondNum
+    const multiplication = firstNum * secondNum
+    const division = firstNum / secondNum
+
+    document.write(`
+    <table border="1">
+    <tr>
+        <th>Сумма чисел ${firstNum} та ${secondNum}</th>
+        <th>Добуток чисел ${firstNum} та ${secondNum}</th>
+        <th>Частка чисел ${firstNum} та ${secondNum}</th>
+    </tr>
+    <tr>
+        <td>${sum}</td>
+        <td>${multiplication}</td>
+        <td>${division}</td>
+    </tr>
+</table>
+    
+    `)
+
+  </script>
+</body>
+
+</html>

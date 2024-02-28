@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>lesson 01</title>
+</head>
+
+<body>
+  <script>
+    const cost = parseFloat(prompt('вартість одиниці товару'))
+    const quantity = parseFloat(prompt('кількість товару'))
+    const vat = 5
+    let totalCost = cost * quantity
+    let vatResult = (totalCost * vat) / 100;
+
+    document.write(
+      `
+    <table border="1">
+    <tr>
+        <th>Вартість одиниці товару</th>
+        <th>Кількість товару</th>
+        <th>Загальна вартість</th>
+        <th>ПДВ</th>
+    </tr>
+    <tr>
+        <td>${cost} грн</td>
+        <td>${quantity}</td>
+        <td>${totalCost} грн</td>
+        <td>${vat} грн</td>
+    </tr>
+</table>
+    `)
+
+  </script>
+
+</body>
+
+</html>
