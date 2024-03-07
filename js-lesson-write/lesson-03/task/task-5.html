@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let userWrite = prompt(`Введіть назву категорії з маленької букви:`)
+    switch (userWrite) {
+      case 'a':
+        res = 'мотоцикл'
+        break
+      case 'b':
+        res = 'легковий автомобіль'
+        break
+      case 'c':
+        res = 'вантажний автомобіль'
+        break
+      default:
+        res = 'неправильна категорія!'
+        break
+    }
+    document.write(res)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const ageUser = parseInt(prompt('Введіть вік:'))
+    if (ageUser <= 7)
+      document.write('це дитина у садочку')
+    else if (ageUser <= 17)
+      document.write('це дитина у школі')
+    else if (ageUser <= 22)
+      document.write('це cтудент')
+    else if (ageUser <= 65)
+      document.write('це працівник')
+    else if (ageUser > 100)
+      document.write('неправельний вік!')
+    else
+      document.write('це пенсіонер')
+  </script>
+</body>
+
+</html>
